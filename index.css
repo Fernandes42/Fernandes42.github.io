@@ -17,6 +17,7 @@ html {
     color: white;
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('earth.jpg');
     z-index: 4;
+    position: relative;
 }
 #me_section {
     align-items: center;
@@ -24,19 +25,31 @@ html {
     background-image: url('nasa.jpg');
 }
 #experience_section {
-    /* align-items: center; */
+    align-items: center;
     color: white;
-    background-image: url('close_earth.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('close_earth.jpg');
 }
 #projects_section {
-    /* align-items: center; */
+    align-items: center;
     color: black;
-    background-image: url('night_sky.jpg');
+    background-image: url('hurricane.jpg');
+    padding:0 10em 0 10em;
 }
 #contact_section {
     align-items: center;
     color: white;
     background-color: black;
+    padding-left: 1em;
+    padding-top: 1em;
+    top: 0;
+    z-index: -1;
+    /* position: fixed; */
+    width: 100%;
+    height: 100%;
+    font-family: Monaco, Consolas, "Lucida Console", monospace;
+    background-color: black;
+    color: #1EFF00;
+    text-align: center;
 }
 .project_deck {
     height: 30%;
@@ -57,4 +70,8 @@ html {
     right: 1%;
     z-index: 3;
     background-color: :black;
+}
+
+.green-link {
+    color:#1EFF00;
 }
