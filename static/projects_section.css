@@ -3,4 +3,17 @@
     color: black;
     background-image: url('../images/hurricane.jpg');
     padding:0 10em 0 10em;
+    z-index: 4;
+}
+.card-columns:hover > .card:not(:hover) {
+	opacity: .5;
+}
+.card-columns:hover > .card {
+	transition-duration: .5s;
+}
+.card:hover {
+    transform: scale(1.03);
+}
+.card {
+    border-radius: 25px;
 }
