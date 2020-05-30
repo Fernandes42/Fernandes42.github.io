@@ -1,57 +1,24 @@
-(function () {
-let skillsbars = document.getElementsByClassName("skills-bar");
-let skillsProg = document.getElementsByClassName("skills-prog");
-let skillsProgLi = document.getElementsByTagName("li");
-console.log(skillsProgLi);
-//
-  $(skillsProgLi).find('.skills-bar').each(function (i) {
-    $(this).find('.bar').delay(i * 150).animate({
-      width: $(this).parents().attr('data-percent') + '%' },
-    1000, 'linear', function () {
-      return $(this).css({
-        'transition-duration': '.5s' });
+$.fn.isInViewport = function() {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+  };
 
-    });
-  });
+$(function () {
+    $('div.skills-prog').find('div.skills-bar').each(function (i) {
+      if ($(this).isInViewport()) {
+        console.log(this);
+        $(this).find('.bar').delay(i * 150).animate({
+          width: $(this).parents().attr('data-percent') + '%' },
+        1000, 'linear', function () {
+          return $(this).css({
+            'transition-duration': '.5s' });
 
-  function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-  }
+        });
+      }
+    })
+});
 
-  // super simple router - go to page specified in hash, otherwise go to "default"
-  function router(route) {
-    const pageName = route ? route : $('.default.page').attr('data-page-name');
-    const $page = $(`[data-page-name="${pageName}"]`);
-    $('.page').css('display', 'none');
-    $('[data-page]').removeClass('active');
-    $(`[data-page="${pageName}"]`).addClass('active');
-    $page.css('display', 'block');
-  }
-  router();
-
-  // fake loader
-  let progress = 0;
-  const fakeLoaderInterval = window.setInterval(function () {
-    const $lp = $('.loading-progress');
-    progress = progress + getRandomArbitrary(10, 25);
-    $lp.css('transform', `translateX(${progress}%)`);
-
-    if (progress >= 75) {
-      window.clearInterval(fakeLoaderInterval);
-      $lp.css('transform', 'translateX(100%)');
-      setTimeout(() => $('.loading').css('transform', 'translateY(calc(100% + 10px))'), 400);
-    }
-  }, getRandomArbitrary(100, 500));
-
-  // navigation
-  $('.main-nav li a').on('click', e => {
-    const $this = $(e.currentTarget);
-    const route = $this.attr('data-page');
-
-    $('.main-nav li a').removeClass('active');
-    $this.addClass('active');
-    router(route);
-  });
-
-
-//# sourceURL=coffeescript
+// function barChart (){}
