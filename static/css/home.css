@@ -10,10 +10,12 @@
   svg {
     visibility: hidden;  
   }
-  .anim path {
+  /* .anim path {
+    stroke-width: 2;
+  } */
+  .map {
     stroke-width: 2;
   }
-
   .name {
     visibility: hidden;
   }

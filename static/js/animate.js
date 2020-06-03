@@ -38,7 +38,7 @@ setTimeout(function name() {
         anime({
             targets: pathEl,
             strokeDashoffset: [offset, 0],
-            duration: anime.random(8000, 10000),
+            duration: anime.random(9000, 10000),
             delay: anime.random(0, 1000),
             // loop: true,
             // direction: 'alternate',
@@ -46,4 +46,4 @@ setTimeout(function name() {
             autoplay: true
         });
     }
-}, 5000)
+}, 4000)
