@@ -39,19 +39,3 @@ html {
     /* z-index: 2; */
     background-color: black;
 }
-.anim {
-    height: 100vh;
-    background-color: black;
-}
-.anim, .anim svg {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    /* visibility: hidden; */
-  }
-  svg {
-    visibility: hidden;  
-  }
-  .anim path {
-    stroke-width: 2;
-  }

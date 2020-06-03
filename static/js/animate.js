@@ -29,6 +29,7 @@ function map() {
 
 setTimeout(function name() {
     console.log("name")
+    $(".name").css("visibility", "visible");
     var pathEls = document.getElementsByClassName('name');
     for (var i = 0; i < pathEls.length; i++) {
         var pathEl = pathEls[i];
@@ -39,8 +40,8 @@ setTimeout(function name() {
             strokeDashoffset: [offset, 0],
             duration: anime.random(1000, 2000),
             delay: anime.random(0, 1000),
-            loop: true,
-            direction: 'alternate',
+            // loop: true,
+            // direction: 'alternate',
             easing: 'easeInOutSine',
             autoplay: true
         });
