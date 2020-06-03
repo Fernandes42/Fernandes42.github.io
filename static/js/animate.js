@@ -16,7 +16,7 @@ function map() {
         anime({
             targets: pathEl,
             strokeDashoffset: [offset, 0],
-            duration: anime.random(1000, 3000),
+            duration: anime.random(1000, 2500),
             delay: anime.random(0, 2000),
             // loop: true,
             direction: 'alternate',
@@ -24,7 +24,7 @@ function map() {
             autoplay: true
         });
     }
-    name();
+    // name();
 }
 
 setTimeout(function name() {
@@ -38,7 +38,7 @@ setTimeout(function name() {
         anime({
             targets: pathEl,
             strokeDashoffset: [offset, 0],
-            duration: anime.random(1000, 2000),
+            duration: anime.random(8000, 10000),
             delay: anime.random(0, 1000),
             // loop: true,
             // direction: 'alternate',
