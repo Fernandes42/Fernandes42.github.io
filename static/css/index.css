@@ -33,9 +33,12 @@ html {
 }
 
 #fixed-position-on-page {
+    color:yellow;
     position: fixed;
     top: 10%;
     right: 2%;
     /* z-index: 2; */
     background-color: black;
+    display: none;
+    width: 8%;
 }

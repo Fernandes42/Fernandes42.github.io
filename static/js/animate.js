@@ -47,3 +47,8 @@ setTimeout(function name() {
         });
     }
 }, 4000)
+
+setTimeout(function show_nav() {
+    console.log("show nav")
+    $("#fixed-position-on-page").fadeIn("slow");
+}, 7000)
