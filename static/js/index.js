@@ -46,4 +46,4 @@ function animateBars() {
 
 animateBars();
 
-$(window).bind('scroll', animateBars);
+// $(window).bind('scroll', animateBars);

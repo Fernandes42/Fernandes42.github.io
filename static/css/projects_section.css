@@ -1,5 +1,5 @@
 #projects_section {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     color: black;
     background-color: black;
@@ -21,13 +21,17 @@
 .card {
     border-radius: 25px;
 }
-
+#top {
+  width:100%;
+}
+#bottom {
+  width:100%;
+}
 
 .wrap
 {
   margin:50px auto 0 auto;
-  width:100%;
-  display:flex;
+  display: flex;
   align-items:space-around;
   max-width:1200px;
   /* position: absolute; */

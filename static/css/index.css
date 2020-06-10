@@ -33,7 +33,6 @@ html {
 }
 
 #fixed-position-on-page {
-    color:yellow;
     position: fixed;
     top: 10%;
     right: 2%;
@@ -42,3 +41,7 @@ html {
     display: none;
     width: 8%;
 }
+.btn-outline-warning {
+    outline-color: yellow;
+    color: yellow;
+  }
