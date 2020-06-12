@@ -41,7 +41,7 @@ html {
     display: none;
     width: 8%;
 }
-.btn-outline-warning {
+.btn {
     outline-color: yellow;
     color: yellow;
   }
