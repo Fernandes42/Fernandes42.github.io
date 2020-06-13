@@ -7,6 +7,9 @@
 //   };
 
 $(function () {
+  $('.skills-prog').waypoint(function() {
+      animateBars()
+    }, { offset: '75%' });
 });
 
 function isScrolledIntoView(elem) {
@@ -43,7 +46,8 @@ function animateBars() {
 // animateBars();
 
 // $(window).bind('scroll', animateBars);
-
-animateBars();
+// if ($('.skills-prog').visible()) {
+//   animateBars();
+// }
 
 // $(window).bind('scroll', animateBars);

@@ -191,6 +191,7 @@ ul {
 
 .resume .func .skills-prog {
 	clear: both;
+	display: block;
 }
 
 .resume .func .skills-prog ul {
@@ -285,3 +286,7 @@ ul {
 #width-100 {
     width:100%;
 }
+
+/* #skilly {
+	display: block;
+} */
