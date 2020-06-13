@@ -6,6 +6,9 @@
     padding:0 10em 0 10em;
     z-index: 4;
 }
+h1 {
+  color:black
+}
 .card-columns {
     width: 90%;
 }
