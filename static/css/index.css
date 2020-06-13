@@ -39,7 +39,7 @@ html {
     /* z-index: 2; */
     background-color: black;
     display: none;
-    width: 8%;
+    width: 9em;
 }
 .btn {
     outline-color: yellow;

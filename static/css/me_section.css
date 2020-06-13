@@ -142,7 +142,7 @@ ul {
 .resume .func .work ul li:first-of-type::before, .resume .func .edu ul li:first-of-type::before {
 	width: 10px;
 	height: 10px;
-	left: -2px;
+	left: 1px;
 }
 
 .resume .func .work ul li:last-of-type, .resume .func .edu ul li:last-of-type {
@@ -161,12 +161,12 @@ ul {
 
 .resume .func .work ul li::before, .resume .func .edu ul li::before {
 	width: 7px;
-	height: 7px;
-	border: 3px solid #3d405b;
-	background: #fcfcfc;
-	border-radius: 50%;
-	left: 0;
-	z-index: 1;
+    height: 7px;
+    border: 3px solid #3d405b;
+    background: #3d405b;
+    border-radius: 50%;
+    left: 3px;
+    z-index: 1;
 }
 
 .resume .func .work ul li::after, .resume .func .edu ul li::after {

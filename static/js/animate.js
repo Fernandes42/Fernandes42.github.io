@@ -7,7 +7,6 @@ $(function () {
 
 function map() {
     $("svg").css("visibility", "visible");
-    console.log("map")
     var pathEls = document.getElementsByClassName('map');
     for (var i = 0; i < pathEls.length; i++) {
         var pathEl = pathEls[i];
@@ -28,7 +27,6 @@ function map() {
 }
 
 setTimeout(function name() {
-    console.log("name")
     $(".name").css("visibility", "visible");
     var pathEls = document.getElementsByClassName('name');
     for (var i = 0; i < pathEls.length; i++) {
@@ -49,6 +47,5 @@ setTimeout(function name() {
 }, 4000)
 
 setTimeout(function show_nav() {
-    console.log("show nav")
     $("#fixed-position-on-page").fadeIn("slow");
 }, 7000)
