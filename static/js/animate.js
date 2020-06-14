@@ -1,8 +1,6 @@
 $(function () {
     $(".map_svg").hide();
     map();
-
-
 })
 
 function map() {
@@ -23,7 +21,6 @@ function map() {
             autoplay: true
         });
     }
-    // name();
 }
 
 setTimeout(function name() {

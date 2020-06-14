@@ -1,29 +1,35 @@
 html {
-  scroll-behavior: smooth;
-  background-color:black;
+    scroll-behavior: smooth;
+    background-color: black;
 }
+
 .white-text {
-    color:white;
+    color: white;
     font-size: 45px;
 }
-.div-background{
+
+.div-background {
     box-sizing: border-box;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     height: 100vh;
 }
+
 .center-text {
-    width:100%;
+    width: 100%;
     text-align: center;
 }
-.center-text > p {
+
+.center-text>p {
     font-weight: 500;
-    font-size:75px;
+    font-size: 75px;
 }
-.center-text > h3 {
-    font-size:25px;
+
+.center-text>h3 {
+    font-size: 25px;
 }
+
 #right_button {
     position: fixed;
     top: 50%;
@@ -41,7 +47,8 @@ html {
     display: none;
     width: 9em;
 }
+
 .btn {
     outline-color: yellow;
     color: yellow;
-  }
+}
