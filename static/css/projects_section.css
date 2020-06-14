@@ -4,6 +4,7 @@
   background-color: black;
   padding: 0 10em 0 10em;
   z-index: 4;
+  font-family: 'Ubuntu', '微軟正黑體', sans-serif;
 }
 
 h1 {
@@ -15,7 +16,7 @@ h1 {
 }
 
 .card-columns:hover>.card:not(:hover) {
-  opacity: .5;
+  opacity: 1;
 }
 
 .card-columns:hover>.card {
@@ -52,7 +53,7 @@ h1 {
   height: 380px;
   margin: 10px;
   /* background-color:#99aeff; */
-  background-color: yellow;
+  background-color: white;
   display: inline-block;
   background-size: cover;
   position: relative;
@@ -61,7 +62,6 @@ h1 {
   box-shadow: 0px 35px 77px -17px rgba(0, 0, 0, 0.44);
   overflow: hidden;
   color: black;
-  font-family: 'Roboto';
 }
 
 .tile img {
@@ -85,7 +85,7 @@ h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   margin: 0;
-  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  /* text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); */
 }
 
 .tile h2 {
@@ -116,7 +116,7 @@ h1 {
 }
 
 .tile:hover img {
-  opacity: 0.2;
+  opacity: 0;
 }
 
 .tile:hover .animate-text {
@@ -124,46 +124,9 @@ h1 {
   opacity: 1;
 }
 
-.dots {
-  position: absolute;
-  bottom: 20px;
-  right: 30px;
-  margin: 0 auto;
-  width: 30px;
-  height: 30px;
-  color: currentColor;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.dots span {
-  width: 5px;
-  height: 5px;
-  background-color: currentColor;
-  border-radius: 50%;
-  display: block;
-  opacity: 0;
-  transition: transform 0.4s ease-out, opacity 0.5s ease;
-  transform: translateY(30px);
-}
-
 .tile:hover span {
   opacity: 1;
   transform: translateY(0px);
-}
-
-.dots span:nth-child(1) {
-  transition-delay: 0.05s;
-}
-
-.dots span:nth-child(2) {
-  transition-delay: 0.1s;
-}
-
-.dots span:nth-child(3) {
-  transition-delay: 0.15s;
 }
 
 @media (max-width: 1000px) {
