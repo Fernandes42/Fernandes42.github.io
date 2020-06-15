@@ -33,3 +33,7 @@ function animateBars() {
     done = true;
   }
 }
+
+$("img").click(function() {
+  console.log('click')
+})
