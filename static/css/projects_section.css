@@ -2,7 +2,7 @@
   align-items: center;
 	color: #3d405b;
   background-color: black;
-  padding: 0 10em 0 10em;
+  /* padding: 0 10em 0 10em; */
   z-index: 4;
   font-family: 'Ubuntu', '微軟正黑體', sans-serif;
 }
@@ -43,17 +43,21 @@ p {
 }
 
 .wrap {
-  margin: 50px auto 0 auto;
+  width: 90%;
+  margin: 5em auto 5em auto;
   display: flex;
   align-items: space-around;
   max-width: 1200px;
+  align-self: center;
   /* position: absolute; */
 }
 
 .tile {
   border-radius: 25px;
-  width: 380px;
-  height: 380px;
+  /* width: 380px;
+  height: 380px; */
+  width: 24em;
+  height: 24em;
   margin: 10px;
   /* background-color:#99aeff; */
   background-color: white;
